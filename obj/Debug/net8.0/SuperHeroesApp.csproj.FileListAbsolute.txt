@@ -12,3 +12,4 @@ E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\refint\SuperHeroes
 E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.pdb
 E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.genruntimeconfig.cache
 E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\ref\SuperHeroesApp.dll
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.sourcelink.json

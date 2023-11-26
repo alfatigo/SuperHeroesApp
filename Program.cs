@@ -1,8 +1,18 @@
 ﻿
-var CanFly = new SuperPower();
-CanFly.Name = "Fly"; 
-CanFly.Description = "Has the ability to fly and plane in the air";
-CanFly.level = PowerLevel.LevelTwo;
+var canFly = new SuperPower();
+canFly.Name = "Fly"; 
+canFly.Description = "Has the ability to fly and plane in the air";
+canFly.level = PowerLevel.LevelTwo;
+
+var superStrength = new SuperPower();
+superStrength.Name = "Superhuman Strength";
+superStrength.Description = "Has super strngth, can lift more than 1tons";
+superStrength.level = PowerLevel.LevelTwo;
+
+var Intelect = new SuperPower();
+Intelect.Name = "Genius-level intellect";
+Intelect.Description = "Has an IQ of over 250";
+Intelect.level = PowerLevel.LevelTwo;
 
 var batman = new SuperHeroe();
 batman.Id = 1;
@@ -10,7 +20,10 @@ batman.Name = "Batman";
 batman.secretIdentity = "Bruce Wayne";
 batman.City = "Gotham City";
 batman .Fly = false;
-batman.Abilities = new[] {"Intellect","Fighting skills","Wealth", "Martial arts skills"};
+
+List<SuperPower> BatmanSuperPower  = new List<SuperPower>();
+BatmanSuperPower.Add(Intelect);
+BatmanSuperPower.Add(superStrength);
 
 var superman = new SuperHeroe();
 superman.Id = 2;
@@ -18,7 +31,12 @@ superman.Name = "Superman";
 superman.secretIdentity ="Clark Kent";
 superman.City = "metropolis city";
 superman.Fly = true;
-superman.Abilities = new[] {"Superhuman Strength","X-ray Vision", "Super-Speed", "Nigh-Invulnerability"};
+
+List<SuperPower>  SupermanSuperPower = new List<SuperPower>();
+SupermanSuperPower.Add(canFly);
+SupermanSuperPower.Add(superStrength);
+
+superman.SuperPower = SupermanSuperPower;
 class SuperHeroe
 {
 
@@ -26,7 +44,7 @@ class SuperHeroe
     public string Name;
     public string secretIdentity;
     public string City;
-    public string[] Abilities;
+    public List<SuperPower> SuperPower;
     public bool Fly;
 
 }
