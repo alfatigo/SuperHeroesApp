@@ -1,4 +1,9 @@
 ﻿
+var CanFly = new SuperPower();
+CanFly.Name = "Fly"; 
+CanFly.Description = "Has the ability to fly and plane in the air";
+CanFly.level = PowerLevel.LevelTwo;
+
 var batman = new SuperHeroe();
 batman.Id = 1;
 batman.Name = "Batman";
@@ -26,3 +31,16 @@ class SuperHeroe
 
 }
 
+class SuperPower
+{
+    public string Name;
+    public string Description;
+    public int level;
+}
+
+enum PowerLevel
+{
+    LevelOne, 
+    LevelTwo, 
+    LevelTrhee
+}
