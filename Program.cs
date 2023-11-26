@@ -2,17 +2,17 @@
 var canFly = new SuperPower();
 canFly.Name = "Fly"; 
 canFly.Description = "Has the ability to fly and plane in the air";
-canFly.level = PowerLevel.LevelTwo;
+canFly.level = (int) PowerLevel.LevelTwo;
 
 var superStrength = new SuperPower();
 superStrength.Name = "Superhuman Strength";
 superStrength.Description = "Has super strngth, can lift more than 1tons";
-superStrength.level = PowerLevel.LevelTwo;
+superStrength.level = (int) PowerLevel.LevelTwo;
 
 var Intelect = new SuperPower();
 Intelect.Name = "Genius-level intellect";
 Intelect.Description = "Has an IQ of over 250";
-Intelect.level = PowerLevel.LevelTwo;
+Intelect.level = (int) PowerLevel.LevelTwo;
 
 var batman = new SuperHeroe();
 batman.Id = 1;
@@ -58,7 +58,7 @@ class SuperPower
 
 enum PowerLevel
 {
-    LevelOne, 
-    LevelTwo, 
-    LevelTrhee
+    LevelOne = 1, 
+    LevelTwo = 2, 
+    LevelTrhee = 3
 }
