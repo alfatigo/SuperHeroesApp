@@ -1,5 +1,5 @@
-﻿
-using System.Text;
+﻿using System.Text;
+using SuperHeroesApp.Models;
 
 var canFly = new SuperPower();
 canFly.Name = "Fly";
@@ -43,48 +43,6 @@ SupermanSuperPower.Add(superStrength);
 superman.SuperPower = SupermanSuperPower;
 string resultSuperPower = superman.UseSupoerPower();
 Console.WriteLine(resultSuperPower);
-class SuperHeroe
-{
-
-    public int Id;
-    public string Name;
-    public string secretIdentity;
-    public string City;
-    public List<SuperPower> SuperPower;
-    public bool Fly;
-
-    public SuperHeroe()
-    {
-
-        Id = 1;
-        SuperPower = new List<SuperPower>();
-        Fly = false;
-
-    }
-    public string UseSupoerPower(){
-        StringBuilder sb = new StringBuilder();
-        foreach(var power in SuperPower){
-            sb.AppendLine($"The super Heroe {Name} is using the power: {power.Name}");
-        }
-        return sb.ToString();
-    }
-}
-
-
-
-class SuperPower
-{
-    public string Name;
-    public string Description;
-    public int level;
-
-    public SuperPower()
-    {
-
-        level = (int)PowerLevel.LevelOne;
-
-    }
-}
 
 enum PowerLevel
 {
