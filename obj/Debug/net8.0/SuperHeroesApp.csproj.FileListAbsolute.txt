@@ -1,0 +1,14 @@
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\bin\Debug\net8.0\SuperHeroesApp.exe
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\bin\Debug\net8.0\SuperHeroesApp.deps.json
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\bin\Debug\net8.0\SuperHeroesApp.runtimeconfig.json
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\bin\Debug\net8.0\SuperHeroesApp.dll
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\bin\Debug\net8.0\SuperHeroesApp.pdb
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.AssemblyInfoInputs.cache
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.AssemblyInfo.cs
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.csproj.CoreCompileInputs.cache
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.dll
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\refint\SuperHeroesApp.dll
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.pdb
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\SuperHeroesApp.genruntimeconfig.cache
+E:\C#_Proyects\superHeroesAPP\SuperHeroesApp\obj\Debug\net8.0\ref\SuperHeroesApp.dll
