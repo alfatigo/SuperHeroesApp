@@ -43,13 +43,16 @@ superman.secretIdentity = "Clark Kent";
 superman.City = "metropolis city";
 superman.Fly = true;
 
-List<SuperPower> SupermanSuperPower = new List<SuperPower>();
+var SupermanSuperPower = new List<SuperPower>();
 SupermanSuperPower.Add(canFly);
 SupermanSuperPower.Add(superStrength);
 superman.SuperPower = SupermanSuperPower;
 string resultSuperPower = superman.UseSupoerPower();
 Console.WriteLine(resultSuperPower);
-
+string ResultSaveTheWorld = superman.SaveTheWorld();
+string ResultSaveTheEarth = superman.SaveTheEarth();
+Console.WriteLine(ResultSaveTheWorld);
+Console.WriteLine(ResultSaveTheEarth);
 
 var deadpool = new AntiHeroe();
 deadpool.Id = 3;

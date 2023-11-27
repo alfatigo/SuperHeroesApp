@@ -4,12 +4,12 @@ using System.Text;
 namespace SuperHeroesApp.Models
 {
 
-    class SuperHeroe
+    class SuperHeroe : Heroe
     {
 
         private string _Name;
         public int Id;
-        public string Name {
+        public override string Name {
             get{
                 return _Name;
             }
@@ -23,6 +23,7 @@ namespace SuperHeroesApp.Models
                 return $"{Name} ({secretIdentity})";
             }
         }
+
         public string secretIdentity;
         public string City;
         public List<SuperPower> SuperPower;
@@ -44,6 +45,16 @@ namespace SuperHeroesApp.Models
                 sb.AppendLine($"The super Heroe {SecretIdentity} is using the power: {power.Name}");
             }
             return sb.ToString();
+        }
+
+        public override string SaveTheWorld()
+        {
+            return $"{SecretIdentity} saved the World!";
+        }
+
+        public override string SaveTheEarth()
+        {
+            return $"{Name} saved the Earth!";
         }
     }
 }
