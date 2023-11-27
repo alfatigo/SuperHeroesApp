@@ -16,6 +16,11 @@ Intelect.Name = "Genius-level intellect";
 Intelect.Description = "Has an IQ of over 250";
 Intelect.level = (int)PowerLevel.LevelTwo;
 
+var HealingFactor = new SuperPower();
+HealingFactor.Name = "Regenerative healing factor";
+HealingFactor.Description = "Has Accelerated healing factor.";
+HealingFactor.level = (int)PowerLevel.LevelTrhee;
+
 var batman = new SuperHeroe();
 batman.Id = 1;
 batman.Name = "Batman";
@@ -28,7 +33,8 @@ BatmanSuperPower.Add(Intelect);
 BatmanSuperPower.Add(superStrength);
 batman.SuperPower = BatmanSuperPower;
 batman.UseSupoerPower();
-
+string resultBatmanSuperPower = batman.UseSupoerPower();
+Console.WriteLine(resultBatmanSuperPower);
 
 var superman = new SuperHeroe();
 superman.Id = 2;
@@ -43,6 +49,22 @@ SupermanSuperPower.Add(superStrength);
 superman.SuperPower = SupermanSuperPower;
 string resultSuperPower = superman.UseSupoerPower();
 Console.WriteLine(resultSuperPower);
+
+
+var deadpool = new AntiHeroe();
+deadpool.Id = 3;
+deadpool.Name = "Wade Wilson";
+deadpool.secretIdentity = "Dead Pool";
+deadpool.City = "Regina, Saskatchewan, Canadá";
+deadpool.Fly = false;
+
+List<SuperPower> DeadPoolSuperPower = new List<SuperPower>();
+DeadPoolSuperPower.Add(HealingFactor);
+deadpool.SuperPower = DeadPoolSuperPower;
+string resultDeadpoolSuperPower = deadpool.UseSupoerPower();
+Console.WriteLine(resultDeadpoolSuperPower);
+string AntiheroeAction = deadpool.DoAntiheroeThing("Kill an inocent");
+Console.WriteLine(AntiheroeAction);
 
 enum PowerLevel
 {
