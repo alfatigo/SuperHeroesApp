@@ -1,6 +1,8 @@
 ﻿using System.Text;
+using SuperHeroesApp;
 using SuperHeroesApp.Models;
 
+var printInfo = new PrintInfo();
 var canFly = new SuperPower();
 canFly.Name = "Fly";
 canFly.Description = "Has the ability to fly and plane in the air";
@@ -27,8 +29,9 @@ batman.Name = "Batman";
 batman.secretIdentity = "Bruce Wayne";
 batman.City = "Gotham City";
 batman.Fly = false;
+printInfo.PrintSuperHeroe(batman);
 
-List<SuperPower> BatmanSuperPower = new List<SuperPower>();
+List<SuperPower> BatmanSuperPower = new();
 BatmanSuperPower.Add(Intelect);
 BatmanSuperPower.Add(superStrength);
 batman.SuperPower = BatmanSuperPower;
@@ -42,6 +45,7 @@ superman.Name = "Superman    ";
 superman.secretIdentity = "Clark Kent";
 superman.City = "metropolis city";
 superman.Fly = true;
+printInfo.PrintSuperHeroe(superman);
 
 var SupermanSuperPower = new List<SuperPower>();
 SupermanSuperPower.Add(canFly);
@@ -60,6 +64,7 @@ deadpool.Name = "Wade Wilson";
 deadpool.secretIdentity = "Dead Pool";
 deadpool.City = "Regina, Saskatchewan, Canadá";
 deadpool.Fly = false;
+printInfo.PrintSuperHeroe(deadpool);
 
 List<SuperPower> DeadPoolSuperPower = new List<SuperPower>();
 DeadPoolSuperPower.Add(HealingFactor);

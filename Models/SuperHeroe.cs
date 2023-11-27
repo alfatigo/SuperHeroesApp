@@ -1,14 +1,15 @@
 using System.Security.Principal;
 using System.Text;
+using SuperHeroesApp.Interfaces;
 
 namespace SuperHeroesApp.Models
 {
 
-    class SuperHeroe : Heroe
+    class SuperHeroe : Heroe, ISuperHeroe
     {
 
         private string _Name;
-        public int Id;
+        public int Id {get; set;}
         public override string Name
         {
             get
@@ -29,7 +30,7 @@ namespace SuperHeroesApp.Models
             }
         }
 
-        public string secretIdentity;
+        public string secretIdentity {get;set;}
         public string City;
         public List<SuperPower> SuperPower;
         public bool Fly;
