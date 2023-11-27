@@ -32,7 +32,7 @@ batman.UseSupoerPower();
 
 var superman = new SuperHeroe();
 superman.Id = 2;
-superman.Name = "Superman";
+superman.Name = "Superman    ";
 superman.secretIdentity = "Clark Kent";
 superman.City = "metropolis city";
 superman.Fly = true;
