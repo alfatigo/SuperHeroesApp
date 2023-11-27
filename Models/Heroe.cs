@@ -6,6 +6,9 @@ namespace SuperHeroesApp.Models
     {
         public abstract string Name { get; set; }
         public abstract string SaveTheWorld();
-        public abstract string SaveTheEarth();
+        public virtual string SaveTheEarth()
+        {
+            return $"{Name} saved the Earth!";
+        }
     }
 }

@@ -9,17 +9,22 @@ namespace SuperHeroesApp.Models
 
         private string _Name;
         public int Id;
-        public override string Name {
-            get{
+        public override string Name
+        {
+            get
+            {
                 return _Name;
             }
-            set{
+            set
+            {
                 _Name = value.Trim();
             }
         }
 
-        public string SecretIdentity{
-            get{
+        public string SecretIdentity
+        {
+            get
+            {
                 return $"{Name} ({secretIdentity})";
             }
         }
@@ -51,10 +56,11 @@ namespace SuperHeroesApp.Models
         {
             return $"{SecretIdentity} saved the World!";
         }
-
         public override string SaveTheEarth()
         {
-            return $"{Name} saved the Earth!";
+            //return base.SaveTheEarth();
+            return $"{SecretIdentity} saved The Earth!";
         }
+
     }
 }
